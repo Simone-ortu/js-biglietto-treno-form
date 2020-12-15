@@ -1,5 +1,17 @@
+/* Main rules */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color:#cd5c5c;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+/* Titolo */
+h1{
+  padding: 20px 0;
+  color: white;
 }
