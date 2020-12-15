@@ -7,11 +7,58 @@
 
 body{
   background-color:#cd5c5c;
-  text-transform: uppercase;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 /* Titolo */
 h1{
   padding: 20px 0;
   color: white;
+  text-transform: uppercase;
+}
+.form{
+  background-color: #fff;
+  max-width: 1500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 40px;
+}
+.btn{
+  background-color: lightgrey;
+  color: #cd5c5c;
+  border-radius: 5px;
+  border: 1px solid #cd5c5c;
+  margin: 20px;
+  padding: 10px;
+}
+input, select{
+  border-radius: 5px;
+  border: 1px solid #cd5c5c;
+  height: 30px;
+}
+input:focus,
+select:focus{
+  background-color: #cd5c5c;
+  color: #fff;
+  text-align: center;
+
+}
+input::placeholder{
+  text-align: center;
+}
+
+/* biglietto */
+#biglietto{
+  background-color: #fff;
+  max-width: 1500px;
+  margin: auto;
 }
