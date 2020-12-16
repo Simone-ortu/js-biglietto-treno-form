@@ -1,16 +1,12 @@
-var element = document.getElementById("genera");
+var btnGenera = document.getElementById("genera");
 
-element.addEventListener('click',
+btnGenera.addEventListener('click',
     function () {
         var nomeInput = document.getElementById('nome').value;
-        console.log(nomeInput);
-        var distanza = Number(document.getElementById('km').value);
-        console.log(distanza);
+        var distanza =document.getElementById('km').value;
         var eta = document.getElementById('eta').value;
-        console.log(eta);
-
+        var message = 'Tariffa standard'
         var costoBiglietto = 0.21 * distanza;
-        console.log(costo);
 
 
         if (eta == 'minorenne') {
@@ -25,6 +21,10 @@ element.addEventListener('click',
             message = 'Sconto silver'
 
         };
+        // else (eta == 'maggiorenne') {
+        //     costoBiglietto = costoBiglietto * 1;
+        //     message = 'Tariffa standard'
+        // };
 
 
         // dettagli passeggero
@@ -41,9 +41,9 @@ element.addEventListener('click',
 );
 
 
-var pulsanteAnnulla = document.getElementById("annulla");
+var btnAnnulla = document.getElementById("annulla");
 
-element.addEventListener('click',
+btnAnnulla.addEventListener('click',
     function () {
         document.getElementById('nome-passeggero').innerHTML = '';
         document.getElementById('offerta-applicata').innerHTML = '';
@@ -52,11 +52,11 @@ element.addEventListener('click',
         
 
         document.getElementById('costo').innerHTML = '';
-        document.getElementById('km').innerHTML = '';
-        document.getElementById('nome').innerHTML = '';
-        document.getElementById('eta').innerHTML = '';
-    };
-
+        document.getElementById('nome').value = '';
+        document.getElementById('km').value = '';
+        document.getElementById('eta').value = '';
+    }
+);
 
 
 

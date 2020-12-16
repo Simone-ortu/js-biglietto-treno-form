@@ -62,3 +62,8 @@ input::placeholder{
   max-width: 1500px;
   margin: auto;
 }
+.info-bigletto .col{
+  width: 300px;
+  height: 100%;
+  
+}
